@@ -1,5 +1,3 @@
-
-body,
 html {
   width: 100%;
   height: 100%; 
@@ -7,6 +5,8 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 hr {
@@ -55,4 +55,8 @@ header.startup h1 {
   border-color: #ee4b08;
   border-width: 5px;
   cursor: pointer;
+}
+
+.btn-primary:flex {
+  justify-content: flex-end;
 }
