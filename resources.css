@@ -11,3 +11,35 @@ body {
 #resources-title {
     padding: 2rem;
 }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #777;
+    border-radius: .25rem;
+}
+
+.card.card-shadow _{
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.card-body {
+    font-size: .9rem;
+}
+
+.card-footer {
+    margin-top: 1rem;
+}

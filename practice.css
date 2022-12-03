@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, rgb(0, 106, 148), green);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+}
+
+.card {
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: .3s;
+}
+
+.card h3 {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #555;
+}
+
+.card p {
+    padding: 20px;
+    font-size: .8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 30px;
+    border: none;
+    background-color: #40c4ff;
+    border-radius: 20px;
+    color: #fff;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #084994;
+    color: #fff;
+}
+
+.card:hover {
+    background-color: #084994;
+    color: white;
+}
+
+.card:hover h3 {
+    color: white;
+}
