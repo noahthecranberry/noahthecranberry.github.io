@@ -1,0 +1,44 @@
+#content-container {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+    margin-top: 60px;
+}
+
+#games-title {
+    padding: 2rem;
+}
+
+#games-table {
+    margin-bottom: 1rem;
+}
+
+#games-table tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+#games-table tr:hover {
+    background-color: #ddd;
+}
+
+#games-table th {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(rgb(245, 245, 245) 0%, rgb(237, 237, 237) 100%);
+    border-top-color: rgb(77, 77, 77);
+    padding: .5rem 2rem .5rem 2rem;
+    font-weight: 250;
+    font-size: 14px;
+}
+
+#games-table td {
+    padding: 2rem;
+}
+
+#games-table a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#games-table td:nth-child(3) {
+    font-size: 14px;
+}
