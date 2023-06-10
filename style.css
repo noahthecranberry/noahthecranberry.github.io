@@ -7,11 +7,13 @@ body {
 
 table {
     width: 80%;
+    max-height: 10vh;
 }
 
 td {
     border: 1px solid black;
     width: 3em;
+    text-align: center;
 }
   
 tr {
