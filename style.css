@@ -41,6 +41,10 @@ body {
     position: relative;
 }
 
+.filled {
+    background-color: rgba(0, 0, 255, 0.3)
+}
+
 span {
     font-size: 1rem;
     margin: 0;
