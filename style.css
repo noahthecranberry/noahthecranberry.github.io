@@ -6,6 +6,8 @@
     box-sizing: inherit;
 }
 
+
+
 body {
     width: 100vw;
     height: 100vh;
@@ -16,6 +18,12 @@ body {
     padding: 10vh;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 1vh;
+    }
 }
 
 .table {
