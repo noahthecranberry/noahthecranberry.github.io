@@ -164,15 +164,20 @@ span {
 
 .cell--37 {
     grid-column: 3 / 4;
-    grid-row: 89 / 109;
+    grid-row: 89 / 99;
 }
 
 .cell--38 {
     grid-column: 3 / 4;
-    grid-row: 109 / 127;
+    grid-row: 99 / 109
 }
 
 .cell--39 {
+    grid-column: 3 / 4;
+    grid-row: 109 / 127;
+}
+
+.cell--311 {
     grid-column: 3 / 4;
     grid-row: 127 / 145;
 }
