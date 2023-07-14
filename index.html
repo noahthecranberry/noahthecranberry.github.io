@@ -1,122 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <title>Table Practice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="panda.png">
+    <title>askljfgskjgowkdgnm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    
-    <section class="table">
 
-        <div class="cell cell--11">8:00 AM<span></span></div>
-        <div class="cell cell--12">9:05 AM<span></span></div>
-        <div class="cell cell--13">10:10 AM<span></span></div>
-        <div class="cell cell--14 filled">11:15 AM<span>HIS154 40790</span></div>
-        <div class="cell cell--15">12:20 PM<span></span></div>
-        <div class="cell cell--16 filled">1:50 PM<span>MAT120 40914</span></div>
-        <div class="cell cell--17">3:20 PM<span></span></div>
-        <div class="cell cell--18">5:00 PM<span></span></div>
-        <div class="cell cell--19 filled">6:30-7:45<span>CS120 40353</span></div>
+    <nav class="navbar navbar-expand-lg bg-black bg-body-primary " data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="panda.png" alt="panda" width="50" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="schedule.html">Schedule</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-        <div class="cell cell--21">8:00 AM<span></span></div>
-        <div class="cell cell--22">9:30 AM<span></span></div>
-        <div class="cell cell--23">11:00 AM<span></span></div>
-        <div class="cell cell--24">12:30 PM<span></span></div>
-        <div class="cell cell--25 filled">2:00 PM<span>ENG101 40605</span></div>
-        <div class="cell cell--26">3:30 PM<span></span></div>
-        <div class="cell cell--27 filled">5:00-6:15<span>JAP101 40888</span></div>
-        <div class="cell cell--28">6:30 PM<span></span></div>
 
-        <div class="cell cell--31">8:00 AM<span></span></div>
-        <div class="cell cell--32">9:05 AM<span></span></div>
-        <div class="cell cell--33">10:10 AM<span></span></div>
-        <div class="cell cell--34 filled">11:15 AM<span>HIS154 40790</span></div>
-        <div class="cell cell--35">12:20 PM<span></span></div>
-        <div class="cell cell--36 filled">1:50 PM<span>MAT120 40914</span></div>
-        <div class="cell cell--37 filled">3:20-4:10<span>CS120 40353</span></div>
-        <div class="cell cell--38">4:10<span></span></div>
-        <div class="cell cell--39">5:00 PM<span></span></div>
-        <div class="cell cell--311 filled">6:30-7:45<span>CS120 40353</span></div>
 
-        <div class="cell cell--41">8:00 AM<span></span></div>
-        <div class="cell cell--42">9:30 AM<span></span></div>
-        <div class="cell cell--43">11:00 AM<span></span></div>
-        <div class="cell cell--44">12:30 PM<span></span></div>
-        <div class="cell cell--45 filled">2:00 PM<span>ENG101 40605</span></div>
-        <div class="cell cell--46">3:30 PM<span></span></div>
-        <div class="cell cell--47 filled">5:00-6:15<span>JAP101 40888</span></div>
-        <div class="cell cell--48 filled">6:30-7:20<span>JAP101 40888</span></div>
-        
-        <div class="cell cell--51">8:00 AM<span></span></div>
-        <div class="cell cell--52">9:05 AM<span></span></div>
-        <div class="cell cell--53">10:10 AM<span></span></div>
-        <div class="cell cell--54 filled">11:15 AM<span>HIS154 40790</span></div>
-        <div class="cell cell--55">12:20 PM<span></span></div>
-        <div class="cell cell--56">1:50 PM<span></span></div>
-        <div class="cell cell--57">3:20 PM<span></span></div>
-        <div class="cell cell--58">5:00 PM<span></span></div>
-        <div class="cell cell--59">6:30 PM<span></span></div>
 
-    </section>
-
-<!--
-    <table>
-        <tr>
-            <td rowspan="13">A</td>
-            <td rowspan="18">B</td>
-            <td rowspan="13">C</td>
-            <td rowspan="18">B</td>
-            <td rowspan="13">C</td>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr>
-            <td rowspan="13">A</td>
-            <td rowspan="13">C</td>
-            <td rowspan="13">E</td>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr>
-            <td rowspan="18">B</td>
-            <td rowspan="18">D</td>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-    </table>    
--->
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
