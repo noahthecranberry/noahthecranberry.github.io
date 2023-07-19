@@ -5,7 +5,7 @@ import csv
 players = []
 
 #Get list of players and USCF IDs
-with open('./Static Scraping/SJCC Player List - Sheet4.csv', newline='') as f:
+with open('SJCC Player List - Sheet4.csv', newline='') as f:
     reader = csv.reader(f)
     data = list(reader)
 
