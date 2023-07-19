@@ -1,8 +1,8 @@
 name: run kids_rating_list.py
 
-on:
-  schedule:
-    - cron: '0 0 * * *' # At 00:00
+on: push
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -29,11 +29,5 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated logs" --allow-empty)
-          
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main 
+          git commit -m Kids_Sorted_List.csv
+          git push

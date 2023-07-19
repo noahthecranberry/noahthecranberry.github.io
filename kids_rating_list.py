@@ -47,7 +47,7 @@ for i in data[1:]:
 players.sort(reverse = True)
 
 def update_list():
-    with open('Kids_Sorted _List.csv', 'w', newline='') as f:
+    with open('Kids_Sorted_List.csv', 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(players)
 
