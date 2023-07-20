@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 import csv
 
 players = []
@@ -12,8 +13,9 @@ with open('SJCC Player List - Sheet4.csv', newline='') as f:
 #Getting latest regular rating
 def get_rating(uscf_id):
 
+    header = {'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv::32.0)'}
     url = f'https://www.uschess.org/msa/MbrDtlTnmtHst.php?{uscf_id}'
-    response = requests.get(url)
+    response = requests.get(url, headers=header)
     soup = BeautifulSoup(response.content, 'html.parser')
 
     rows_main = soup.find_all('tr')
@@ -37,18 +39,22 @@ def get_rating(uscf_id):
                 rating = cells[2].text.split('>')[1].split('(')[0].strip()
                 return rating
 
+
+players.append(('rating', 'name'))
 for i in data[1:]:
     id = i[0]
     name = i[1]
+
     rating = int(get_rating(id))
 
     players.append((rating, name))
 
-players.sort(reverse = True)
+players[1:].sort(reverse = True)
 
-def update_list():
+
+def update_list_csv():
     with open('Kids_Sorted_List.csv', 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(players)
 
-update_list()
+update_list_csv()
