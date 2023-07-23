@@ -19,8 +19,11 @@ def make_json(csvFilePath, jsonFilePath):
              
             # Assuming a column named 'No' to
             # be the primary key
-            key = rows['name']
-            data[key] = rows
+
+            name = rows["name"]
+            rating = rows["rating"]
+
+            data[name, rating] = rows
  
     # Open a json writer, and use the json.dumps()
     # function to dump data
