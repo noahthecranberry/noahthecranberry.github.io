@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 import csv
+import pandas as pd
 
 players = []
 
@@ -40,7 +41,6 @@ def get_rating(uscf_id):
                 return rating
 
 
-players.append(('rating', 'name'))
 for i in data[1:]:
     id = i[0]
     name = i[1]
@@ -49,12 +49,16 @@ for i in data[1:]:
 
     players.append((rating, name))
 
-players[1:].sort(reverse = True)
+players.sort(reverse = True)
 
+jsonFilePath = r'players.json'
+def make_json(data, jsonFilePath):
+    df = pd.DataFrame(data, columns=['rating','name'])
+    df.to_json(jsonFilePath, orient = 'records')
 
 def update_list_csv():
     with open('Kids_Sorted_List.csv', 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerows(players)
 
-update_list_csv()
+make_json(players, jsonFilePath)
