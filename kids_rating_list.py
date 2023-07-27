@@ -51,7 +51,7 @@ for i in data[1:]:
 
 players.sort(reverse = True)
 
-jsonFilePath = r'players.json'
+jsonFilePath = r'players_sorted.json'
 def make_json(data, jsonFilePath):
     df = pd.DataFrame(data, columns=['rating','name'])
     df.to_json(jsonFilePath, orient = 'records')

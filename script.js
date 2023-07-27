@@ -1,4 +1,4 @@
-fetch("players.json")
+fetch("players_sorted.json")
 .then(function(response){
     return response.json();
 })

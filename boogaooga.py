@@ -14,7 +14,7 @@ class Student:
 
 
 
-Student.studentsList.append(Noah := Student("Noah", 1875))
+Student.studentsList.append(Student("Noah", 1875))
 Student.studentsList.append(Student("Boah", 69))
 Student.studentsList.append(Student("Shoah", 420))
 
