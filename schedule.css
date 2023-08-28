@@ -13,7 +13,7 @@ body {
     font-size: .8rem;
     font-weight: 600;
     color: #1B2C4F;
-    padding: 10vh;
+    padding: 5vh;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
@@ -22,6 +22,15 @@ body {
     body {
         padding: 1vh;
     }
+}
+
+.classrooms {
+    color: white;
+    font-size: 14px;
+}
+
+strong {
+    font-size: 16px
 }
 
 .table {
