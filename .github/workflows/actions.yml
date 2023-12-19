@@ -23,12 +23,12 @@ jobs:
           pip install -r requirements.txt
           
       - name: execute py script # run main.py
-        run: python ./kids rating list/kids_rating_list.py
+        run: python kids_rating_list.py
           
       - name: commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add ./kids rating list/players_sorted.json
-          git commit -m ./kids rating list/players_sorted.json
+          git add players_sorted.json
+          git commit -m players_sorted.json
           git push
