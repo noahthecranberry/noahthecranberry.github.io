@@ -1,6 +1,8 @@
 name: run kids_rating_list.py
 
-on: push
+on:
+  schedule:
+    - cron: '0 0 1 * *'
 permissions:
   contents: write
 
@@ -15,7 +17,7 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9' # install the python version needed
+          python-version: '3.12' # install the python version needed
           
       - name: install python packages
         run: |
