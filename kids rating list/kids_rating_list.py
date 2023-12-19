@@ -56,9 +56,10 @@ def make_json(data, jsonFilePath):
     df = pd.DataFrame(data, columns=['rating','name'])
     df.to_json(jsonFilePath, orient = 'records')
 
-def update_list_csv():
+def update_list_csv(list):
     with open('Kids_Sorted_List.csv', 'w', newline='') as f:
         writer = csv.writer(f)
-        writer.writerows(players)
+        writer.writerows(list)
 
 make_json(players, jsonFilePath)
+update_list_csv(players)

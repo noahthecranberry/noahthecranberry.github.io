@@ -1,4 +1,4 @@
-fetch("players_sorted.json")
+fetch("./kids rating list/players_sorted.json")
 .then(function(response){
     return response.json();
 })

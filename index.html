@@ -24,7 +24,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="schedule.html">Schedule</a>
+                <a class="nav-link" href="./schedule/schedule.html">Schedule</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -41,6 +41,7 @@
         </div>
       </nav>
 
+      <a href="./kids rating list/Kids_Sorted_List.csv">Kids Rating List Sorted</a>
 
       <table>
         <thead>
@@ -51,37 +52,6 @@
         </thead>
         <tbody id="data-output"></tbody>
       </table>
-
-      <!--
-        <script>
-        window.onload = () => {
-          var reader = new FileReader(),
-            table = document.getElementById('table');
-
-          fetch('Kids_Sorted_List.csv')
-
-          console.log(picker.files[0])
-
-          reader.onloadend = () => {
-            let csv = Kids_Sorted_List.csv;
-            table.innerHTML = '';
-
-            let rows = csv.split('\r\n');
-
-            for (let row of rows) {
-              let cols = row.match (/(?:\"([^\"]*(?:\"\"[^\"]*)*)\")|([^\",]+)/g);
-              if (cols != null) {
-                let tr = table.insertRow();
-                for (let col of cols) {
-                  let td = tr.insertCell();
-                  td.innerHTML = col.replace(/(^"|"$)/g, "");
-                }
-              }
-            }
-          };
-        };
-      </script>
-      -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
