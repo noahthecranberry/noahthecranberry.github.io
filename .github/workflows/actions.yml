@@ -1,8 +1,6 @@
 name: run kids_rating_list.py
 
-on:
-  schedule:
-    - cron: '0 0 1 * *'
+on: push
 permissions:
   contents: write
 
