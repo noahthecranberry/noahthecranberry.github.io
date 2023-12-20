@@ -4,5 +4,38 @@ body {
 }
 
 nav {
-    margin-bottom: 1vw;
+    margin: 1vw 0;
+    border-radius: 10em;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 400ms;
+    cursor: pointer;
+    margin-right: 1000px;
+}
+
+.download-button {
+    border: 2px solid #0B2B26;
+    border-radius: 10px;
+    color: #0B2B26;
+    background-color: #fff;
+
+    transition-duration: 300ms
+}
+
+.download-button:hover {
+    color: #fff;
+    background-color: #0B2B26;
 }

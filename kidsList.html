@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" href="panda.png">
-    <title>askljfgskjgowkdgnm</title>
+    <title>Kids List</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
+    <script src="updateKidsList.js" defer></script>
 </head>
 <body>
 
@@ -40,16 +41,17 @@
         </div>
       </nav>
 
-      <a href="Kids_Sorted_List.csv">
-        <button class="download-button">Kids Sorted</button>
-      </a>
-      <a href="highScores.csv">
-        <button class="download-button">High Scores</button>
-      </a>
-      <a href="numEvents.csv">
-        <button class="download-button">Number of Events</button>
-      </a>
-   
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody id="data-output"></tbody>
+      </table>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
